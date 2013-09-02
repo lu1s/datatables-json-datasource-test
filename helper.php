@@ -3,7 +3,7 @@
 	$st = file_get_contents("input.json");
 	$obj = json_decode($st, true);
 	$arr = array();
-	foreach($obj[ads] as $item)
+	foreach($obj['ads'] as $item)
 	{
 		array_push($arr, array(
 			'type_name'			=>	$item['type_name'],
